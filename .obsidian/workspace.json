@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "b2e2d76731f07fb5",
+    "type": "split",
+    "children": [
+      {
+        "id": "597da2572858b449",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e466e3877bafe41c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OS/Notater/Kapittel 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Kapittel 1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "555a04d44f5adc0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "76e0b1719e5016fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea73742a22c8eb28",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "343ec1f1d3e41fa6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8eb14752359d37e1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "617db4bdead90e60",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f1af49cc8b38f6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae92e824eda81c48",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OS/Notater/Kapittel 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Kapittel 1"
+            }
+          },
+          {
+            "id": "93e1f0c70f127e34",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "ef09b2633599986c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "944fbd3534f693b5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OS/Notater/Kapittel 1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Kapittel 1"
+            }
+          },
+          {
+            "id": "7042af4a289cf17b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "7042af4a289cf17b",
+  "lastOpenFiles": [
+    "CPU.md",
+    "OS/Notater/Kapittel 1.md",
+    "().md",
+    "EXPH/Time notater/22.08.2025 Argumentasjonsteori.md",
+    "EXPH/Time notater/29.08.2025 Argumentasjonsanalyse.md",
+    "ALGMET/21.08.2025.md",
+    "ALGMET/19.08.2025.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Untitled 2.base",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "EXPH/Time notater",
+    "EXPH/Seminar",
+    "EXPH/Kapittel notater/Kapittel 1.md",
+    "OS/Intro.md",
+    "EXPH/Kapittel notater",
+    "ALGMET/Datastrukturer/Stack.md",
+    "ALGMET/Datastrukturer/Queue.md",
+    "ALGMET/Datastrukturer/Map.md",
+    "ALGMET/Datastrukturer/List.md",
+    "OS/Notater",
+    "ALGMET/Datastrukturer/Vektor.md",
+    "ALGMET/Datastrukturer",
+    "OS/test2.md",
+    "MATTE",
+    "STAT",
+    "Welcome.md"
+  ]
+}

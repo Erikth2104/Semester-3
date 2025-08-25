@@ -1,0 +1,1 @@
+ytelses problemer løses ved caching og parallisering
