@@ -11,14 +11,10 @@
             "id": "e089e56c7665c590",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OS/Notater/Kapittel 1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Kapittel 1"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "617db4bdead90e60",
@@ -142,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/Notater/Kapittel 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Kapittel 1"
+              "title": "Outline"
             }
           },
           {
@@ -180,15 +174,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e089e56c7665c590",
+  "active": "7042af4a289cf17b",
   "lastOpenFiles": [
-    "Pasted image 20250825131118.png",
-    "Pasted image 20250825122401.png",
-    "Pasted image 20250825121344.png",
-    "Pasted image 20250825121203.png",
     "Untitled 1.base",
+    "IMG",
     "Untitled.base",
     "OS/Notater/Kapittel 1.md",
+    "New folder",
+    "IMG/Pasted image 20250825131118.png",
+    "IMG/Pasted image 20250825122401.png",
+    "IMG/Pasted image 20250825121344.png",
+    "IMG/Pasted image 20250825121203.png",
     "CPU.md",
     "().md",
     "EXPH/Time notater/22.08.2025 Argumentasjonsteori.md",
@@ -212,7 +208,6 @@
     "ALGMET/Datastrukturer",
     "OS/test2.md",
     "MATTE",
-    "STAT",
     "Welcome.md"
   ]
 }
