@@ -11,10 +11,14 @@
             "id": "e089e56c7665c590",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OS/Notater/Kapittel 1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Kapittel 1"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "617db4bdead90e60",
@@ -174,12 +179,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7042af4a289cf17b",
+  "active": "e089e56c7665c590",
   "lastOpenFiles": [
     "Untitled 1.base",
-    "IMG",
-    "Untitled.base",
+    "Untitled 4.base",
     "OS/Notater/Kapittel 1.md",
+    "IMG/Pasted image 20250825183434.png",
+    "IMG/Pasted image 20250825183514.png",
+    "Untitled 3.base",
+    "Untitled 2.base",
+    "Untitled.base",
+    "IMG/Pasted image 20250825182611.png",
+    "IMG",
     "New folder",
     "IMG/Pasted image 20250825131118.png",
     "IMG/Pasted image 20250825122401.png",
@@ -191,7 +202,6 @@
     "EXPH/Time notater/29.08.2025 Argumentasjonsanalyse.md",
     "ALGMET/21.08.2025.md",
     "ALGMET/19.08.2025.md",
-    "Untitled 2.base",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "EXPH/Time notater",
@@ -203,11 +213,8 @@
     "ALGMET/Datastrukturer/Queue.md",
     "ALGMET/Datastrukturer/Map.md",
     "ALGMET/Datastrukturer/List.md",
-    "OS/Notater",
     "ALGMET/Datastrukturer/Vektor.md",
-    "ALGMET/Datastrukturer",
     "OS/test2.md",
-    "MATTE",
     "Welcome.md"
   ]
 }

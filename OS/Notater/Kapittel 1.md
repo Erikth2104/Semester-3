@@ -108,6 +108,39 @@ Direktiver starter med . og labels slutter med(:).
 
 ## Del 4 CPU Hyperthreading
 
+### Pipeline
+![[Pasted image 20250825182611.png]]
+
+Man laster enn, når den er ferdig laster man neste,(a). Dette går løpende slik at man ikke venter.
+
+(b) er en super scalar cpu, hvor man har flere spesialiserte pipelines samtidig.
+
+Speculative execution er branch speculation hvor cpu-en prøver å "gjette" resultatet av en jump instruksjon. Når cpu-en har hentet jump instruksjonen, så gjetter den basert på resultatet av tidligere jump instruksjoner og starter å hente instruksjoner, isteden for å vente på kondisjonen. Når kondisjonen har blitt prosessert så sjekker cpu-en om den hadde rett. Hvis den tok rett så går alt som normalt, hvis ikke så må den laste de andre instruksjonene.
 
 
-## Del 5
+### Hyper threading
+![[Pasted image 20250825183514.png]]
+Hvis en CPU har hyperthreading vil den visse seg som 2 cpu-er for OS-en. Dette er fordi den kan kjøre to programmer samtidig. Her er representerer det gule og røde programmer.
+I effekt har en hyper thread cpu dobbelt opp av alt en cpu har, registere, CU og MMU. MEN det har bare en ALU. 
+
+Med hyper threading har man evnen til å laste 2 programmer fra minne til cpu, men det hjelper ikke med antall operasjoner man kan gjøre pr/s. Det hjelper ved at man kan bytte raskere mellom to programmer.
+
+## Del 5 Cache
+
+CPU har cache mellom seg og minne.
+
+CPU spør cache etter noe, cache har det ikke. Cache spør minne om det har noe, det har det, så lagres det i cache. Nå når cpu spør vil det få det fra cache.
+
+Cache funker fordi vi gjenbruker data i rommet (spatial locality) og tid (temporal locality). Den misnte biten data man kan hente fra minne er 1 byte, men vi cacher alldri 1 byte, man cacher en cache linje (64 byte) 
+
+
+### Write policy
+
+Write-Through: write to cache line and immediately to memory
+Write-Back: Write to cache line and mark cache line as dirty.
+
+Med **write-back** blir data bare skrevet til minne når cache linjen skal bli over-skrevet av en annen eller i tilfeller som context switch. 
+For å gjøre dette må man sjekke om cache linjen man vil skrive er dirty (data som ikke er blitt skrevet til neste nivå minne). Dette gjelder for både read og write operasjoner.
+
+Write-Through er den enkleste og tryggeste, (fordi de vil alltid finnes en kopi av data-en et annet sted). Men siden man skriver til minne med en gang, vil man ha lavere ytelse.
+
