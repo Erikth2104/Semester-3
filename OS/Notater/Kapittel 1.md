@@ -52,13 +52,62 @@ Hver ISA har et spesifikt set instruksjoner den kan utføre. Disse kan varriere 
 - Stack - push, pop
 
 
-## Del 2
+## Del 2 Minne Stack
+Med uten interrupts
+![[Pasted image 20250825121203.png]]
+
+Med interrupts
+![[Pasted image 20250825121344.png]]
+### Registere vs fysisk minne
+Registrene sitt innhold tilhører det programmet som kjører og operativ systemet. 
+
+De kan være flere programmer lastet i minne samtidig (multiprogramming). Men bare en lastet per CPU kjerne (to kan være lastet hvis man har Hyperthreading/SMT er tilgjengelig).
 
 
-## Del 3
+### Program i minne
+![[Pasted image 20250825122401.png]]
 
 
-## Del 4
+- **Text**: Det faktiske programmet, maskin instrukser. Text fordi det er program text.  
+- **Data/heap**: Vokser oppover og er delt i Data, BSS (Black started by symbol) and heap. Dette inneholder globale variabler, lokale statiske variabler og dynamiske allokerte variabler.  
+- **Libraries**: Biblioteker som flere programmer bruker vil ligger her. "Load the library" betyr egentlig "point to the library". Man trenger ikke lagre samme biblotek flere ganger.
+- **Stack**: call stack/ user space stack. Område som vokser nedover . En stack er en data struktur som likner en bøtte. Det siste man legger i bøtten vil ligge på toppen. Stacken er delt i *stack frames*. Verdien av *base pointer register* (EBP/RBP) peker til bunnen av den øverste stack framen.  *Stack pointer register* (EBP/RBP) peker alltid til toppen av stacken (topen av den øverste stack framen). 
+  
+  Når koden din går inn i en funksjon blir en ny stack frame lagd, og den blir fjernet når du går ut av funksjonen. Her blir automatiske variabler, return addresser og i noen tilfeller funksojn argumenter blir lagret. 
+
+## Del 3 Assembly
+Når du kompilerer kode får man instruksjoner (assembly) dette er not portable, til andre arkitekturer.
+ 
+### gcc
+gcc er en kompiler som vil gi assembly kode med -S
+
+gcc -fno-asynchronous-unwind-tables -S tmp.c
+-fno-asynchronous-unwind-tables fjerner .cfi-lines
+
+### 32 vs 64 bit
+Instructions
+- q for 64 bit, pushq
+- l for 32 bit, pushl
+
+Register
+- r for 64 bit, rbp
+- e for 32 bit, ebp
+
+### Syntax
+![[Pasted image 20250825131118.png]]
+Direktiver starter med . og labels slutter med(:). 
+
+- instructions/opcode is called a mnemonic
+- mnemonic suffix b(byte), word (2 byte), long (32 bit), q( quadword 64 bit)
+- % is a register
+- $ is a constant
+- Address calculation: movl -4(%ebp), %eax, her betyr () sted i minne
+  Hent det som er i addresse(%ebp-4) last det til %eax
+
+
+
+## Del 4 CPU Hyperthreading
+
 
 
 ## Del 5
