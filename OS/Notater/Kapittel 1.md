@@ -142,5 +142,5 @@ Write-Back: Write to cache line and mark cache line as dirty.
 Med **write-back** blir data bare skrevet til minne når cache linjen skal bli over-skrevet av en annen eller i tilfeller som context switch. 
 For å gjøre dette må man sjekke om cache linjen man vil skrive er dirty (data som ikke er blitt skrevet til neste nivå minne). Dette gjelder for både read og write operasjoner.
 
-Write-Through er den enkleste og tryggeste, (fordi de vil alltid finnes en kopi av data-en et annet sted). Men siden man skriver til minne med en gang, vil man ha lavere ytelse.
+**Write-Through** er den enkleste og tryggeste, (fordi de vil alltid finnes en kopi av data-en et annet sted). Men siden man skriver til minne med en gang, vil man ha lavere ytelse.
 
